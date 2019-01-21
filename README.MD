@@ -2,7 +2,7 @@
 - Easy interfase for telegram-mtproto  
 
 ### Install
-``nom install easy-telegram-mtproto``
+```npm install easy-telegram-mtproto```
 
 ### Examples
 
@@ -52,21 +52,21 @@ main ();
 
 ### Methods
 
-- ``TelegramClient (apiId, apiHash, name, getPhone, getCode, getRandomMessageId, storageFolder)``
+- ```TelegramClient (apiId, apiHash, name, getPhone, getCode, getRandomMessageId, storageFolder)```
     - apiId and apiHash you can get from [telegram website](https://my.telegram.org/auth?to=apps).
     - name is needed to save login keys.
     - getPhone and getCode are async functions that are called when phone number or telegram login code are required.
     - getRandomMessageId is called when message random_id is required
     - storageFolder to save login keys.
-- ``async asInputPeer (...args)`` converts chat object to InputPeer
-- ``async login ()`` logs in telegram if was not logged in before
-- ``async getChats ()`` returns list of all chats (max 1000)
-- ``async getAndSaveChatsData (jsonFileName = 'chats.json', txtFileName = 'chats.txt')`` gets short chats data and saves it to file
-- ``async chatHistory (chat)`` reads all history from chat
-- ``async forwardMessages (from, to, messages)`` forwardes messages from on chat to another
-- ``async deleteMessagesFromChannel (from, messages)`` deletes selected message from channel or supergroup
-- ``async sendMessage (target, message)`` sends message to chat
-- ``async call (...args)`` calls custom API method [list of methods](https://core.telegram.org/methods)
+- ```async asInputPeer (...args)``` converts chat object to InputPeer
+- ```async login ()``` logs in telegram if was not logged in before
+- ```async getChats ()``` returns list of all chats (max 1000)
+- ```async getAndSaveChatsData (jsonFileName = 'chats.json', txtFileName = 'chats.txt')``` gets short chats data and saves it to file
+- ```async chatHistory (chat)``` reads all history from chat
+- ```async forwardMessages (from, to, messages)``` forwardes messages from on chat to another
+- ```async deleteMessagesFromChannel (from, messages)``` deletes selected message from channel or supergroup
+- ```async sendMessage (target, message)``` sends message to chat
+- ```async call (...args)``` calls custom API method [list of methods](https://core.telegram.org/methods)
 ```js
 await client.call ('messages.sendMessage', {
     peer: TelegramClient.asInputPeer (target),

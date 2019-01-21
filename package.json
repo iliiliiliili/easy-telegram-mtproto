@@ -1,6 +1,6 @@
 {
   "name": "easy-telegram-mtproto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Telegram Client API wrapper for telegram-mtproto",
   "main": "telegram-client.js",
   "scripts": {
