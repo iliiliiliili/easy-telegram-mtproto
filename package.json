@@ -1,12 +1,12 @@
 {
   "name": "easy-telegram-mtproto",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Telegram Client API wrapper for telegram-mtproto",
   "main": "telegram-client.js",
   "scripts": {
     "test": "node test.js"
   },
-  "keywords": ["false", "language", "programming-language"],
+  "keywords": ["telegram", "telegram-mtproto", "easy", "client", "telegram-client"],
   "author": "Illia Oleksiienko <iliiliilya123@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/iliiliiliili/easy-telegram-mtproto/issues"
   },
-  "homepage": "https://github.com/iliiliiliili/easy-telegram-mtproto#readme"
+  "homepage": "https://github.com/iliiliiliili/easy-telegram-mtproto#readme",
+  "dependencies" :{ 
+    "telegram-mtproto": "^2.2.2",
+    "mtproto-storage-fs": "^0.3.1"
+  }
 }

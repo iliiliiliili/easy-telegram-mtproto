@@ -1,5 +1,6 @@
 # Easy Telegram Mtproto
-- Easy interfase for telegram-mtproto  
+- Easy interface for telegram-mtproto
+- Allows you to create custom telegram clients, chat-bots as user, etc  
 
 ### Install
 ```npm install easy-telegram-mtproto```
@@ -66,7 +67,7 @@ main ();
 - ```async forwardMessages (from, to, messages)``` forwardes messages from on chat to another
 - ```async deleteMessagesFromChannel (from, messages)``` deletes selected message from channel or supergroup
 - ```async sendMessage (target, message)``` sends message to chat
-- ```async call (...args)``` calls custom API method [list of methods](https://core.telegram.org/methods)
+- ```async call (...args)``` calls custom API method. [List of methods](https://core.telegram.org/methods)
 ```js
 await client.call ('messages.sendMessage', {
     peer: TelegramClient.asInputPeer (target),
