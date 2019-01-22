@@ -1,12 +1,12 @@
 {
   "name": "easy-telegram-mtproto",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Telegram Client API wrapper for telegram-mtproto",
   "main": "telegram-client.js",
   "scripts": {
     "test": "node test.js"
   },
-  "keywords": ["false", "language", "programming-language"],
+  "keywords": ["telegram", "telegram-mtproto", "easy", "client", "telegram-client"],
   "author": "Illia Oleksiienko <iliiliilya123@gmail.com>",
   "license": "MIT",
   "repository": {
